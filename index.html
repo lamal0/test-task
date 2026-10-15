@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lamal&amp;co — Eco Leather Lighter Cases</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/jpeg" href="img/logo/logo.jpg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="brand">
+        <img src="img/logo/logo.jpg" alt="lamal&amp;co logo" class="brand-logo" />
+        <span class="brand-name">lamal&amp;co</span>
+      </a>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language to Ukrainian">
+        UK
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-gallery" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Case color gallery">
+          <div class="gallery-viewport">
+            <div id="gallery-track" class="gallery-track" role="group" aria-label="Case color gallery"></div>
+          </div>
+          <button
+            class="gallery-arrow gallery-prev"
+            type="button"
+            data-i18n-aria-label="gallery.prevLabel"
+            aria-label="Previous case"
+          >
+            &#8249;
+          </button>
+          <button
+            class="gallery-arrow gallery-next"
+            type="button"
+            data-i18n-aria-label="gallery.nextLabel"
+            aria-label="Next case"
+          >
+            &#8250;
+          </button>
+          <div id="gallery-dots" class="gallery-dots"></div>
+        </div>
+
+        <div class="hero-content">
+          <h1 data-i18n="hero.title">Give fire a home it deserves.</h1>
+          <p class="hero-text" data-i18n="hero.text">
+            Hand-stitched lighter cases carved from reclaimed leather, finished with a hand-sculpted clay inlay and a
+            base forged from a spent shell casing. Built to outlast the flame.
+          </p>
+          <p class="hero-price" data-i18n="hero.price">From $100</p>
+          <button id="notify-btn" class="cta-button" type="button" data-i18n="hero.cta">
+            Get notified when this item is available for purchase
+          </button>
+        </div>
+      </section>
+
+      <section class="story">
+        <div class="story-media">
+          <img
+            src="img/process/eco-leather.jpg"
+            data-i18n-alt="story1.title"
+            alt="Reclaimed leather hides being prepared by hand"
+          />
+        </div>
+        <div class="story-content">
+          <h2 data-i18n="story1.title">Reclaimed Leather</h2>
+          <p data-i18n="story1.body">
+            Every case begins with leather rescued from old shoes, bags, and jackets — cleaned, conditioned, and cut
+            by hand. No new hide is ever used.
+          </p>
+        </div>
+      </section>
+
+      <section class="story story--reverse">
+        <div class="story-media">
+          <img
+            src="img/process/clay-insert.jpg"
+            data-i18n-alt="story2.title"
+            alt="Hand-sculpted and hand-painted polymer clay insert"
+          />
+        </div>
+        <div class="story-content">
+          <h2 data-i18n="story2.title">A Clay Heart</h2>
+          <p data-i18n="story2.body">
+            A disc of polymer clay is hand-sculpted, cured, and hand-painted before being bonded into the leather
+            shell — no two inserts are perfectly alike.
+          </p>
+        </div>
+      </section>
+
+      <section class="story">
+        <div class="story-media">
+          <img
+            src="img/process/assembly.jpg"
+            data-i18n-alt="story3.title"
+            alt="Leather case being hand-stitched with a base milled from a spent shell casing"
+          />
+        </div>
+        <div class="story-content">
+          <h2 data-i18n="story3.title">Forged From a Shell</h2>
+          <p data-i18n="story3.body">
+            The leather is stitched and wrapped by hand, then crowned with a base milled from a single spent
+            cartridge casing — one more thing saved from the scrap pile.
+          </p>
+        </div>
+      </section>
+
+      <section class="finale">
+        <img
+          src="img/final/finale.jpg"
+          class="finale-image"
+          data-i18n-alt="finale.slogan"
+          alt="A hand holding a lighter, lighting a candle"
+        />
+        <div class="finale-overlay">
+          <p class="finale-slogan" data-i18n="finale.slogan">Give a simple thing deep meaning and value.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.text">© 2026 lamal&amp;co. Handmade in small batches.</p>
+    </footer>
+
+    <div id="modal-backdrop" class="modal-backdrop" hidden>
+      <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button
+          id="modal-close"
+          class="modal-close"
+          type="button"
+          data-i18n-aria-label="modal.closeLabel"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+        <h2 id="modal-title" data-i18n="modal.title">Get notified when this item is available for purchase</h2>
+        <p data-i18n="modal.subtext">
+          Leave your email and we'll let you know the moment lamal&amp;co cases go on sale.
+        </p>
+        <form id="notify-form" novalidate>
+          <label for="email-input" data-i18n="modal.emailLabel">Email address</label>
+          <input
+            id="email-input"
+            name="email"
+            type="email"
+            required
+            data-i18n-placeholder="modal.emailPlaceholder"
+            placeholder="you@example.com"
+          />
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          <button id="submit-btn" type="submit" data-i18n="modal.submit">Notify me</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
